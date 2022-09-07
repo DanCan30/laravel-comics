@@ -103,6 +103,39 @@ main::after {
   left: 22rem;
 }
 
+div.card {
+  width: calc(16.6666666667% - 2rem);
+  margin: 1rem;
+}
+
+div.card h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+div.card .comic-img-container {
+  width: 18rem;
+  height: 18rem;
+  overflow: hidden;
+}
+
+div.card .comic-img-container img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transition: 0.3s;
+}
+
+div.card .comic-img-container img:hover {
+  transform: scale(1.2);
+  filter: saturate(40%);
+}
+
 footer {
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
   background-size: cover;
