@@ -1,1 +1,139 @@
-//
+@import "./partials/common";
+@import "./partials/variables";
+@import "./partials/mixins";
+
+
+// HEADER
+
+header {
+    @include generalContainer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        padding: 1.5rem 0;
+    }
+        
+    nav ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin: 0 1rem;
+            
+            a {
+                color: $textColor;
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 3.65rem 0;
+
+                &:hover,
+                &.active {
+                    border-bottom: 5px solid $brandColor;
+                    color: $brandColor;
+                }
+            }
+        }
+    }
+}
+
+// JUMBOTRON
+
+
+div.jumbo-container {
+    height: 35rem;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+}
+
+
+// MAIN
+
+main {
+    background-color: #1C1C1C;
+    padding-top: 4rem;
+    position: relative;
+
+    div {
+        @include generalContainer;
+        color: $brandSecondaryColor;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+      }
+
+    a {
+      display: inline-block;
+      padding: 1rem 5rem;
+      text-align: center;
+      text-decoration: none;
+      color: $brandSecondaryColor;
+      background-color: $brandColor;
+      margin: 1rem auto;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: .3s;
+
+      &:hover {
+      color: $brandColor;
+      background-color: $brandSecondaryColor;
+      }
+    }
+
+    &::after {
+      content: 'current series';
+      display: inline-block;
+      color: $brandSecondaryColor;
+      background-color: $brandColor;
+      padding: 1rem 3rem;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      position: absolute;
+      top: -2rem;
+      font-weight: bold;
+      left: 22rem;
+    }
+  }
+
+// FOOTER
+
+
+footer {
+
+    background-image: url("../../public/assets/images/footer-bg.jpg");
+    background-size: cover;
+
+    &>div {
+        @include generalContainer;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        .footer-left {
+            width: 40%;
+            padding: 4rem 0;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .footer-right {
+            width: 40%;
+            background-image: url("../../public/assets/images/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        } 
+    }
+  }
+    

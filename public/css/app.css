@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  padding: 1.5rem 0;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #89949e;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 3.65rem 0;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  border-bottom: 5px solid #0282F9;
+  color: #0282F9;
+}
+
+div.jumbo-container {
+  height: 35rem;
+  width: 100%;
+}
+
+div.jumbo-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main {
+  background-color: #1C1C1C;
+  padding-top: 4rem;
+  position: relative;
+}
+
+main div {
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main a {
+  display: inline-block;
+  padding: 1rem 5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #0282F9;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+main a:hover {
+  color: #0282F9;
+  background-color: #FFFFFF;
+}
+
+main::after {
+  content: "current series";
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #0282F9;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  position: absolute;
+  top: -2rem;
+  font-weight: bold;
+  left: 22rem;
+}
+
+footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-size: cover;
+}
+
+footer > div {
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+footer > div .footer-left {
+  width: 40%;
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer > div .footer-right {
+  width: 40%;
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
