@@ -218,11 +218,100 @@ footer > div .footer-left {
   flex-wrap: wrap;
 }
 
+footer > div .footer-left div {
+  width: 33.3333333333%;
+}
+
+footer > div .footer-left div h3 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+footer > div .footer-left div ul {
+  list-style: none;
+}
+
+footer > div .footer-left div ul li a {
+  color: #89949e;
+  text-decoration: none;
+}
+
+footer > div .footer-left div ul li a:hover {
+  color: #FFFFFF;
+}
+
 footer > div .footer-right {
   width: 40%;
   background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+section.socials-container {
+  background-color: #303030;
+}
+
+section.socials-container > div {
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+section.socials-container > div a {
+  text-decoration: none;
+}
+
+section.socials-container > div .social-left {
+  width: 50%;
+}
+
+section.socials-container > div .social-left a {
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 2px solid #0282F9;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+section.socials-container > div .social-left a:hover {
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  color: #0282F9;
+}
+
+section.socials-container > div .social-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section.socials-container > div .social-right ul {
+  list-style: none;
+}
+
+section.socials-container > div .social-right ul li {
+  display: inline-block;
+}
+
+section.socials-container > div .social-right a {
+  color: #0282F9;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}
+
+section.socials-container > div .social-right a:hover {
+  color: #FFFFFF;
 }
 

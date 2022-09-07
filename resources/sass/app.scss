@@ -210,31 +210,126 @@ section.store {
 
 footer {
 
-    background-image: url("../../public/assets/images/footer-bg.jpg");
-    background-size: cover;
+  background-image: url("../../public/assets/images/footer-bg.jpg");
+  background-size: cover;
 
-    &>div {
-        @include generalContainer;
-        display: flex;
-        justify-content: space-between;
-        height: 100%;
+  &>div {
+    @include generalContainer;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
 
-        .footer-left {
-            width: 40%;
-            padding: 4rem 0;
-            display: flex;
-            flex-wrap: wrap;
+    .footer-left {
+      width: 40%;
+      padding: 4rem 0;
+      display: flex;
+      flex-wrap: wrap;
 
+      div {
+        width: calc(100% / 3);
+
+        h3 {
+        text-transform: uppercase;
+        color: $brandSecondaryColor;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
         }
 
-        .footer-right {
-            width: 40%;
-            background-image: url("../../public/assets/images/dc-logo-bg.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        ul {
+        list-style: none;
 
-        } 
+          li {
+
+            a {
+                color: $textColor;
+                text-decoration: none;
+
+              &:hover {
+              color: $brandSecondaryColor;
+              }
+
+            }
+
+          }
+        }
+      }
+
+    }
+
+    .footer-right {
+      width: 40%;
+      background-image: url("../../public/assets/images/dc-logo-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    } 
+  }
+}
+
+// SOCIALS
+
+section.socials-container {
+  background-color: #303030;
+
+  &>div {
+    @include generalContainer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    a {
+        text-decoration: none;
+    }
+
+    .social-left {
+      width: 50%;
+
+        a {
+          color: $brandSecondaryColor;
+          display: inline-block;
+          padding: .75rem 1rem;
+          border: 2px solid $brandColor;
+          text-transform: uppercase;
+          font-size: 1.3rem;
+          transition: .3s;
+
+          &:hover {
+          background-color: $brandSecondaryColor;
+          border: 2px solid $brandSecondaryColor;
+          color: $brandColor;
+          }
+        }
+
+    }
+
+    .social-right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+
+      ul {
+        list-style: none;
+
+        li {
+          display: inline-block;
+        }
+      }
+
+      a {
+        color: $brandColor;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        padding: 0 1rem;
+
+        &:hover {
+          color: $brandSecondaryColor;
+        }
+      }
     }
   }
+}
     
