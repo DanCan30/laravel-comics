@@ -13,6 +13,7 @@
 
             </div>       
         @endforeach
+
     </div>
     <div>
         <a href="#">load more</a>

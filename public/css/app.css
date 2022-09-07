@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -18,12 +20,17 @@ header img {
   padding: 1.5rem 0;
 }
 
+header nav {
+  width: 80%;
+}
+
 header nav ul {
   list-style: none;
 }
 
 header nav ul li {
   display: inline-block;
+  position: relative;
   margin: 0 1rem;
 }
 
@@ -32,13 +39,29 @@ header nav ul li a {
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 3.65rem 0;
+  padding: 3.9rem 0;
 }
 
 header nav ul li a:hover,
 header nav ul li a.active {
   border-bottom: 5px solid #0282F9;
   color: #0282F9;
+}
+
+header nav ul li:nth-last-child(2)::before {
+  content: "\25BC";
+  color: #0282F9;
+  position: absolute;
+  right: -22px;
+}
+
+header nav ul li input {
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #0282F9;
+  text-align: right;
+  padding-right: 1rem;
 }
 
 div.jumbo-container {
