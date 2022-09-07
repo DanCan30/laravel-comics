@@ -159,6 +159,44 @@ div.card .comic-img-container img:hover {
   filter: saturate(40%);
 }
 
+section.store {
+  background-color: #0282F9;
+}
+
+section.store div {
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+section.store div ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 4rem 0;
+}
+
+section.store div ul li {
+  display: flex;
+  align-items: center;
+}
+
+section.store div ul li:nth-child(4) img {
+  width: 3rem;
+}
+
+section.store div ul li img {
+  width: 4rem;
+}
+
+section.store div ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  font-weight: normal;
+}
+
 footer {
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
   background-size: cover;

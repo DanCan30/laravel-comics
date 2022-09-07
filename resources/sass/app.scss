@@ -164,6 +164,47 @@ div.card {
   }
 
 
+// STORE
+
+
+section.store {
+  background-color: $brandColor;
+
+  div {
+      @include generalContainer;
+
+      ul {
+
+          display: flex;
+          justify-content: space-evenly;
+          list-style: none;
+          padding: 4rem 0;
+
+          li {
+              display: flex;
+              align-items: center;
+
+              &:nth-child(4) img {
+                  width: 3rem;
+              }
+              
+              img {
+                  width: 4rem;
+              }
+
+              a {
+                  text-decoration: none;
+                  color: $brandSecondaryColor;
+                  text-transform: uppercase;
+                  margin-left: 2rem;
+                  font-weight: normal;
+              }
+          }
+
+      }
+  }
+}
+
 // FOOTER
 
 
